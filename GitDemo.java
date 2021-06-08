@@ -30,12 +30,25 @@ public class GitDemo {
      * @param - description of passed in arguments go here
      * @return - description of return value goes here
      *****/
-    public double templateFunction(int num) {
-        double latestNumber = 1;
+    public double Function1(int num) {
+       double latestNumber = 1;
         
         for (int j = 1; j <= num; ++j) {
             latestNumber = latestNumber * j;
         
     }
         return latestNumber;
+}
+
+      
+   public double Function2(int num) {
+      double factorialNumber = 0;
+        
+        while( num != 0) {
+            double temp = num % 10;
+            factorialNumber = factorialNumber * 10 + temp;
+            num /= 10;
+
+    }
+        return factorialNumber;
 }
